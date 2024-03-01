@@ -23,7 +23,7 @@ const EditForm = ({book}: {book: Book}) => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <h1>Adicionar Novo <Link href="/">Voltar</Link></h1>
+      <h1>Editar {book.titulo} <Link href="/">Voltar</Link></h1>
       <input type="text" value={data.titulo} onChange={e => setData({ ...data, titulo: e.target.value })} />
       <input type="text" value={data.autor} onChange={e => setData({ ...data, autor: e.target.value })} />
       <input type="text" value={data.ano_publicacao} onChange={e => setData({ ...data, ano_publicacao: e.target.value })} />
