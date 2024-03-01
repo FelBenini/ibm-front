@@ -24,6 +24,7 @@
 
   input {
     border: 1px solid #fafafa;
+    color: #fafafa;
   }
 
   --tile-start-rgb: 239, 245, 249;
