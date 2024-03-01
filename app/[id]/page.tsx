@@ -20,7 +20,7 @@ const UpdateBook = async ({ params }: { params: { id: number } }) => {
     <main className={styles.main}>
       <div>
         <h1>Reservas</h1>
-        <Link href={`${params.id}/add-reserva`}>Reservar Novo</Link>
+        <Link href={`/${params.id}/add-reserva`}>Reservar Novo</Link>
       </div>
       <ul>
         <li>
