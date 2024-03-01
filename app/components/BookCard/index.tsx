@@ -16,12 +16,12 @@ const BookCard = ({book}: {book: Book}) => {
   }
 
   return (
-    <li className={styles.item} onClick={() => router.push(`/${book.id}`)}>
+    <Link className={styles.item} href={`/${book.id}`}>
       <h3>{book.id} {book.titulo}</h3>
       <p>{book.autor}</p>
       <p>{book.exemplar}</p>
       <span>
-        <Link href={`${book.id}/add-reserva`}>
+        <Link href={`/${book.id}/add-reserva`}>
           <AddRoadIcon />
         </Link>
         <Link href={`/${book.id}/edit`}>
@@ -30,11 +30,11 @@ const BookCard = ({book}: {book: Book}) => {
         <button onClick={handleDelete}>
           <DeleteIcon />
         </button>
-        <Link href={`${book.id}/add-copias`}>
+        <Link href={`/${book.id}/add-copias`}>
           <ControlPointIcon />
         </Link>
       </span>
-    </li>
+    </Link>
   )
 }
 
