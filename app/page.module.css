@@ -1,0 +1,58 @@
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.main h1 {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  width: 720px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main h1 a {
+  font-size: 1.1rem;
+  padding: 4px;
+  transition: all ease 0.2s;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-weight: 400;
+}
+
+.main h1 a:hover {
+  background-color: rgba(255, 255, 255, 0.101);
+}
+
+.item {
+  display: flex;
+  width: 720px;
+  max-width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.797);
+  margin-bottom: 1rem;
+}
+
+.item span {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.item p {
+  width: 30%;
+  text-align: center;
+}
+
+.item h3 {
+  width: 30%;
+}

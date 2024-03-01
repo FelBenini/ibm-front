@@ -1,0 +1,40 @@
+.main {
+  width: 720px;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.main div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  width: 100%;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.form button {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #9333ea;
+  transition: all ease 0.2s;
+  border: none;
+  border-radius: 6px;
+}
+
+.form button:hover {
+  background-color: #6b21a8;
+}
