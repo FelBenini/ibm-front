@@ -24,8 +24,11 @@ const NewBook = () => {
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <h1>Adicionar Novo <Link href="/">Voltar</Link></h1>
+      <label>Título</label>
       <input type="text" value={data.titulo} onChange={e => setData({ ...data, titulo: e.target.value })} />
+      <label>Autor</label>
       <input type="text" value={data.autor} onChange={e => setData({ ...data, autor: e.target.value })} />
+      <label>Ano de Publicação</label>
       <input type="text" value={data.ano_publicacao} onChange={e => setData({ ...data, ano_publicacao: e.target.value })} />
       <button>Adicionar</button>
     </form>
